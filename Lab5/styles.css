@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
 * {
     margin: 0;
@@ -5,36 +6,51 @@
 }
 
 body {
-    font-size: 16px;
-    width: 85%;
+    background-image: url(bg.png);
+    background-color: #90c8c3;
+    font-size: 18px;
+    width: 80%;
     margin: 1em auto;
     border-style: solid;
     border-width: 0.75em;
     border-color: black;
     border-radius: 1em;
+    min-width: 520px;
+    max-width: 3096px;
 }
 
+h1, p, figcaption, a {
+    padding: 0.5em 0.25em;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Header */
+
 header {
+    background-color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 0.5em 0.5em;
-    margin: 0.5em 0.5em;
+    padding: 1em;
 }
 
-header > h1 {
-    padding: 0.5em 0.25em;
+header h1 {
+    padding: 0 0.25em;
     color: #009788;
-    font-size: 3em;
-    text-align: justify;
-    flex-basis: 80%;
+    font-size: 3.5em;
+    font-family: 'Baskerville', 'Times New Roman', serif;
+    text-align: center;
+    flex-basis: 90%;
+    letter-spacing: 1.25vw;
 }
 
-header > img {
-    padding: 0.25em 0.25em;
+header img {
+    padding-left: 1em;
 }
+
+/* Nav */
 
 nav {
     padding: 0.25em 5em;
@@ -43,12 +59,11 @@ nav {
 
 nav ul {
     list-style: none;
-    margin: 0.1em 0 0.1em 0;
+    margin: 0.1em 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 nav li {
@@ -62,34 +77,46 @@ nav a {
     color: white;
 }
 
-main {
-    padding: 1em 1em;
-}
+/* Main */
 
-main > h1, main > p {
-    margin: 0.5em 0.25em 0.5em 0.25em
+main {
+    background-color: white;
+    padding: 1em;
 }
 
 section {
-    margin: 1em;
-    padding: 0.5em
-}
-
-figure {
+    margin: 3em 1em 1em 1em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    border-style: solid;
+    border-width: 0.25em;
+    border-color: gray;
+    border-radius: 0 2em;
+    border-bottom-style: solid;
+    border-bottom-width: 0.75em;
+    border-bottom-color: #009788;
+}
+
+section figure {
+    margin: 1em;
+    align-self: center;
     background-color: gray;
     border-style: solid;
     border-width: 0.75em;
     border-color: gray;
     border-radius: 1em;
     color: white;
-    margin-right: auto; 
-    margin-left: auto;
+    max-width: 240px
 }
 
-figure img {
-    padding: 0.5em
+figcaption {
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    background-color: white;
+    padding: 0.5em 2em;
 }
