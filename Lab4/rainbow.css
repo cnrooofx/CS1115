@@ -1,0 +1,36 @@
+body {
+    background-color: lawngreen;
+    color: blue
+}
+
+.question {
+    background-color: black;
+    color: white
+}
+
+em, .question a {
+    background-color: gray;
+    color: yellow
+}
+
+b {
+    color: red
+}
+
+#bow li {
+    background-color: gray
+}
+
+li b {
+    color: lawngreen
+}
+
+nav li+li {
+    color: yellow
+}
+
+nav a {
+    background-color: gray;
+    color: red
+}
+

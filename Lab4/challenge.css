@@ -1,0 +1,12 @@
+body{background:#7CFC00;color:#00F}
+
+.question{background:#000;color:#FFF}
+
+em,a,nav li+li{color:#FF0}
+
+b,nav a{color:red}
+
+#bow li,em,a{background:gray}
+
+li b{color:#7CFC00}
+
