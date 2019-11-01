@@ -113,16 +113,19 @@ section {
     border-bottom-width: 0.75em;
     border-radius: 0 2em;
     box-shadow: 0 1em 1em #999;
+    display: flex;
+    flex-direction: column;
     margin: 3em 1em 1em 1em;
     padding: 1.5em;
 }
 
 section figure {
+    align-self: center;
     background-color: #808080;
     border: 0.2em solid #555358;
     border-radius: 1em;
-    margin: 1em auto;
-    width: 240px;
+    margin: 1em;
+    max-width: 240px;
     padding: 1em;
 }
 
