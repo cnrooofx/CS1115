@@ -25,6 +25,9 @@ body {
         font-size: 3.5em;
         letter-spacing: 1.1vw;
     }
+    main > section {
+        margin: 3em 1em 1em 1em;
+    }
 }
 
 h1, p, figcaption, a {
@@ -113,7 +116,7 @@ section {
     border-bottom-width: 0.75em;
     border-radius: 0 2em;
     box-shadow: 0 1em 1em #999;
-    margin: 3em 1em 1em 1em;
+    margin: 3em 0.2em 1em 0.2em;
     padding: 1.5em;
 }
 
