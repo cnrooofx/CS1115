@@ -1,0 +1,36 @@
+/*
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    grid-template-areas: "top top"
+                         "middle-left middle-right"
+                         "lower-left lower-right"
+                         "bottom bottom"
+}
+
+header {
+    grid-area: top top;
+}
+
+nav {
+    grid-area: middle-left;
+}
+
+main {
+    grid-area: middle-right;
+}
+
+aside {
+    grid-area: lower-right;
+}
+
+footer {
+    grid-area: bottom;
+}
+*/
