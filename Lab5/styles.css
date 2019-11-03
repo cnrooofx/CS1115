@@ -13,7 +13,7 @@ body {
     font-size: 18px;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 50em) {
     body {
         border: 0.75em solid #000;
         border-radius: 1em;
