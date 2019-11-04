@@ -5,30 +5,23 @@
 }
 
 body {
-    background-color: #eeb45d /*#e79418*/;
-    background-image: url(media/concrete-wall-2.png);
-    /* Background pattern from Toptal Subtle Patterns
-       https://www.toptal.com/*/
+    background-color: #e16145;
     font-size: 18px;
-
-    border-style: solid;
-    border-color: rgba(213, 126, 0, 1);
-    border-width: 1.5em;
-    border-image-source: url(media/border-tile2.png);
-    border-image-slice: 33%;
-    border-image-repeat: repeat;
-    border-top: 0;
-    border-bottom: 0;
 }
 
 @media screen and (min-width: 50em) {
     body {
-        /*
-        border-left: 0.5em solid #000;
-        border-right: 0.5em solid #000;*/
+        border-style: solid;
+        border-color: rgba(213, 126, 0, 1);
+        border-width: 3em;
+        border-image-source: url(media/border-tile.png);
+        border-image-slice: 33.33%;
+        border-image-repeat: repeat;
+        border-top: 0;
+        border-bottom: 0;
         margin: 0 auto;
         max-width: 2048px;
-        width: 80%;
+        width: 85%;
     }
     header h1 {
         font-size: 3.5em;
@@ -53,6 +46,7 @@ header, main, footer {
 
 header {
     align-items: center;
+    background-color: #FFF8F0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -61,7 +55,13 @@ header {
 }
 
 header h1 {
-    color: #009788;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(213, 126, 0, 1);
+    border-bottom-width: 3em;
+    border-image-source: url(media/border-vine.png);
+    border-image-slice: 33%;
+    border-image-repeat: repeat;
+    color: #8E3B46;
     flex-basis: 90%;
     font-family: 'Baskerville', 'Times New Roman', serif;
     font-size: 3em;
@@ -120,9 +120,14 @@ nav li:first-child a {
 
 /* Main */
 
+main {
+    background-color: #FFF8F0;
+}
+
 section {
+    background-color: #fff;
     border: 0.25em solid #9DACAA;
-    border-bottom-color: #009788;
+    border-bottom-color: #8E3B46;
     border-bottom-width: 0.75em;
     border-radius: 0 2em;
     box-shadow: 0 1em 1em #999;
