@@ -3,10 +3,9 @@
 
 html {
     --background: #E67D66;
-    --header-color: #8E3B46;
+    --main-color: #8E3B46;
     --black: #2F2F2F;
     --white: #FFF8F0;
-    --green: #B1B695;
 }
 
 * {
@@ -16,6 +15,11 @@ html {
 
 body {
     background-color: var(--background);
+    background-image:
+      linear-gradient(
+        var(--background),
+        var(--main-color)
+        );
     font-family: 'Martel', 'Georgia', 'Times New Roman', serif;
     font-size: 18px;
 }
@@ -35,6 +39,15 @@ header, main, footer {
     vertical-align: bottom;
 }
 
+i {
+    font-style: italic;
+    font-weight: bold;
+}
+
+b {
+    color: red;
+}
+
 /* Header */
 
 header {
@@ -42,12 +55,12 @@ header {
 }
 
 header h1 {
-    border: 0.6em solid var(--green);
+    border: 0.6em solid #B1B695;
     border-image-repeat: repeat;
     border-image-slice: 33.33%;
     border-image-source: url(media/border-vine.png);
     border-top: none;
-    color: var(--header-color);
+    color: var(--main-color);
     font-family: 'Baskerville', 'Times New Roman', serif;
     font-size: 3em;
     padding: 0 0.25em 0.5em 0.25em;
@@ -87,7 +100,7 @@ nav li {
 
 nav a {
     background-color: var(--black);
-    border: 0.1em solid var(--header-color);
+    border: 0.1em solid var(--main-color);
     border-radius: 0.5em;
     color: var(--white);
     font-weight: bold;
@@ -99,12 +112,12 @@ nav a {
 nav a:hover {
     background-color: var(--white);
     border: 0.1em solid var(--black);
-    color: var(--header-color);
+    color: var(--main-color);
 }
 
 .current-page {
     background-color: var(--white);
-    color: var(--header-color);
+    color: var(--main-color);
 
 }
 
