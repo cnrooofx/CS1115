@@ -45,7 +45,8 @@ i {
 }
 
 b {
-    color: red;
+    color: var(--main-color);
+    font-weight: bold;
 }
 
 /* Header */
@@ -164,6 +165,13 @@ figcaption {
     color: var(--black);
     font-size: 0.5em;
 }
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+/* Media Queries */
 
 @media screen and (min-width: 50em) {
     body {
