@@ -1,5 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Martel&display=swap');
+@font-face {
+    font-display: swap;
+    font-family: Martel;
+    src: url('media/fonts/martel.woff') format('woff'),
+         url('media/fonts/martel.ttf') format('truetype');
+}
 
 html {
     --background: #E67D66;
@@ -19,34 +24,19 @@ body {
       linear-gradient(
         var(--background),
         var(--main-color)
-        );
-    font-family: 'Martel', 'Georgia', 'Times New Roman', serif;
-    font-size: 18px;
+      );
+    color: var(--black);
+    font-family: 'Martel', 'Times New Roman', serif;
+    font-size: 16px;
 }
 
-h1, p, figcaption, a {
+h1, p, a, figure, figcaption {
     padding: 0.5em 0.25em;
 }
 
 header, main, footer {
     background-color: var(--white);
     padding: 1em;
-}
-
-.subscript {
-    font-size: 0.75em;
-    font-weight: lighter;
-    vertical-align: bottom;
-}
-
-i {
-    font-style: italic;
-    font-weight: bold;
-}
-
-b {
-    color: var(--main-color);
-    font-weight: bold;
 }
 
 /* Header */
@@ -56,7 +46,7 @@ header {
 }
 
 header h1 {
-    border: 0.6em solid #B1B695;
+    border: 0.5em solid #B1B695;
     border-image-repeat: repeat;
     border-image-slice: 33.33%;
     border-image-source: url(media/border-vine.png);
@@ -81,7 +71,7 @@ nav {
     border: 0.25em solid var(--black);
     border-left: none;
     border-right: none;
-    padding: 0.5em;
+    padding: 0.8em;
 }
 
 nav ul {
@@ -91,12 +81,7 @@ nav ul {
     justify-content: space-around;
     list-style: none;
     margin: 0.1em 0;
-}
-
-nav li {
-    padding: 0.6em 0.5em;
     text-align: center;
-
 }
 
 nav a {
@@ -104,7 +89,6 @@ nav a {
     border: 0.1em solid var(--main-color);
     border-radius: 0.5em;
     color: var(--white);
-    font-weight: bold;
     padding: 0.3em 4em;
     text-decoration: none;
     transition-duration: 0.5s;
@@ -119,7 +103,6 @@ nav a:hover {
 .current-page {
     background-color: var(--white);
     color: var(--main-color);
-
 }
 
 /* Main */
@@ -132,12 +115,22 @@ section, article {
     column-width: 25em;
     margin: 3em 0.2em 1em 0.2em;
     padding: 1.5em;
+    text-align: justify;
 }
 
 section p::first-letter, article p::first-letter {
     font-size: 1.4em;
     font-style: normal;
     font-weight: bold;
+}
+
+i {
+    font-style: italic;
+    font-weight: bold;
+}
+
+b, a, cite {
+    color: var(--main-color);
 }
 
 ul, ol {
@@ -147,28 +140,19 @@ ul, ol {
 }
 
 li {
-    padding: 0.1em 0.5em;
+    padding: 0.2em;
 }
 
 figure {
     break-inside: avoid;
-    padding: 1em;
-
 }
 
-figure img {
-    margin: 0 auto;
+img {
     max-width: 100%;
 }
 
 figcaption {
-    color: var(--black);
     font-size: 0.5em;
-}
-
-a {
-    color: var(--main-color);
-    text-decoration: none;
 }
 
 /* Media Queries */
