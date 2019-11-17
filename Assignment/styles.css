@@ -139,16 +139,6 @@ figcaption {
     font-size: 0.75em;
 }
 
-/* Aside */
-aside {
-    background-color: #FFF;
-    border: var(--border);
-    border-width: 0.25em 0;
-}
-aside h1 {
-
-}
-
 /* Media Queries */
 @media screen and (min-width: 50em) {
     body {
@@ -175,9 +165,30 @@ aside h1 {
     }
 }
 @media screen and (min-width: 80em) {
+    body {
+        display: grid;
+        grid-template-areas: "head head" "nav nav" "main aside" "foot foot";
+        grid-template-columns: 80% 20%;
+    }
+    header {
+        grid-area: head;
+    }
+    nav {
+        grid-area: nav;
+    }
+    main {
+        grid-area: main;
+    }
     aside {
-        border-width: 0 0 0.25em 0.25em;
-        float: right;
+        padding: 0.5em 0 0.5em 0.5em;
+        grid-area: aside;
+    }
+    aside article {
+        border-width: 0.25em 0 0.25em 0.25em;
+        margin-right: 0;
+    }
+    footer {
+        grid-area: foot;
     }
     nav a {
         padding: 0.3em 4em;
