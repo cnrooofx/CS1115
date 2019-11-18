@@ -1,7 +1,9 @@
 @font-face {
     font-display: swap;
     font-family: Martel;
-    src: url('media/fonts/martel.woff') format('woff'),
+    src: local('Martel'), local('Martel-Regular'),
+         url('media/fonts/martel.woff2') format('woff2'),
+         url('media/fonts/martel.woff') format('woff'),
          url('media/fonts/martel.ttf') format('truetype');
 }
 
