@@ -10,10 +10,10 @@
 /* Core */
 html {
     --background: #E67D66;
-    --main-color: #8E3B46;
     --black: #2F2F2F;
-    --white: #FFF8F0;
     --border: 0.25em solid var(--black);
+    --main-color: #8E3B46;
+    --white: #FFF8F0;
 }
 * {
     margin: 0;
@@ -32,6 +32,12 @@ h1, p, a, figure, figcaption {
 header, main, aside, footer {
     background-color: var(--white);
     padding: 1em;
+}
+nav, aside {
+    background-color: #FFF;
+    border: var(--border);
+    border-width: 0.25em 0;
+    padding: 0.8em;
 }
 
 /* Header */
@@ -57,12 +63,6 @@ header p {
 }
 
 /* Nav */
-nav {
-    background-color: #FFF;
-    border: var(--border);
-    border-width: 0.25em 0;
-    padding: 0.8em;
-}
 nav ul {
     align-items: center;
     display: flex;
@@ -102,7 +102,7 @@ section, article {
     border: var(--border);
     box-shadow: 0 1em 1em #999;
     column-gap: 2em;
-    column-width: 25em;
+    column-width: 30em;
     margin: 3em 0.2em 1em 0.2em;
     padding: 1.5em;
     text-align: justify;
@@ -129,21 +129,13 @@ li {
 }
 figure {
     break-inside: avoid;
+    text-align: center;
 }
 img {
     max-width: 100%;
 }
-figcaption {
-    font-size: 0.75em;
-}
-
-/* Aside */
-aside {
-    padding: 1em 0;
-}
-aside article {
-    border-width: 0.25em 0;
-    margin: 0.5em 0;
+aside, figcaption {
+    font-size: 0.8em;
 }
 
 /* Media Queries */
@@ -172,31 +164,6 @@ aside article {
     }
 }
 @media screen and (min-width: 90em) {
-    body {
-        display: grid;
-        grid-template-areas: "head head" "nav nav" "main aside" "foot foot";
-        grid-template-columns: 80% 20%;
-    }
-    header {
-        grid-area: head;
-    }
-    nav {
-        grid-area: nav;
-    }
-    main {
-        grid-area: main;
-    }
-    aside {
-        grid-area: aside;
-        padding: 0.5em 0 0.5em 0.5em;
-    }
-    aside article {
-        border-width: 0.25em 0 0.25em 0.25em;
-        margin-right: 0;
-    }
-    footer {
-        grid-area: foot;
-    }
     nav a {
         padding: 0.3em 4em;
     }
