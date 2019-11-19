@@ -112,6 +112,9 @@ section p::first-letter, article p::first-letter {
     font-style: normal;
     font-weight: bold;
 }
+section > h1, article > h1 {
+    column-span: all;
+}
 i {
     font-style: italic;
     font-weight: bold;
@@ -164,6 +167,9 @@ aside, figcaption {
     }
 }
 @media screen and (min-width: 90em) {
+    header h1 {
+        font-size: 5em;
+    }
     nav a {
         padding: 0.3em 4em;
     }
