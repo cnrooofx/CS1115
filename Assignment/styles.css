@@ -137,8 +137,8 @@ figure {
 img {
     max-width: 100%;
 }
-aside, figcaption {
-    font-size: 0.8em;
+figcaption {
+    font-size: 0.75em;
 }
 
 /* Media Queries */
