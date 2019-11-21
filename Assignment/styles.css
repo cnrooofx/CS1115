@@ -149,8 +149,8 @@ img, section, article {
     body {
         border: 3em solid #000;
         border-bottom: none;
-        border-image-slice: 33.33%;
         border-image-repeat: repeat;
+        border-image-slice: 33.33%;
         border-image-source: url(media/border-tile.png);
         border-top: none;
         margin: 0 auto;
