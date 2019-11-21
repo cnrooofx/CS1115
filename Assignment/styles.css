@@ -12,7 +12,7 @@ html {
     --background: #E67D66;
     --black: #2F2F2F;
     --border: 0.25em solid var(--black);
-    --main-color: #75313A;
+    --main-color: #8E3B46;
     --white: #FFF8F0;
 }
 * {
@@ -100,8 +100,8 @@ nav a:hover {
 section, article {
     background-color: #FFF;
     border: var(--border);
-    box-shadow: 0 1em 1em #999;
     column-gap: 2em;
+    column-rule: 0.1em dotted #999;
     column-width: 30em;
     margin: 3em 0.2em 1em 0.2em;
     padding: 1.5em;
@@ -139,6 +139,9 @@ img {
 }
 figcaption {
     font-size: 0.75em;
+}
+img, section, article {
+    box-shadow: 0 1em 1em #999;
 }
 
 /* Media Queries */
