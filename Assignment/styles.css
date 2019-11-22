@@ -12,7 +12,7 @@ html {
     --background: #E67D66;
     --black: #2F2F2F;
     --border: 0.25em solid var(--black);
-    --main-color: #75313A;
+    --main-color: #8E3B46;
     --white: #FFF8F0;
 }
 * {
@@ -49,7 +49,7 @@ header h1 {
     border-image-repeat: repeat;
     border-image-slice: 33.33%;
     border-image-source: url(media/border-vine.png);
-    border-top: none;
+    border-width: 0 0.5em 0.5em 0.5em;
     color: var(--main-color);
     font-family: 'Baskerville', 'Times New Roman', serif;
     font-size: 3em;
@@ -84,7 +84,7 @@ nav a {
     margin: 0.6em 0.1em;
     padding: 0.3em 4em;
     text-decoration: none;
-    transition-duration: 0.5s;
+    transition: background-color 0.7s ease;
 }
 nav a:hover {
     background-color: var(--white);
@@ -100,8 +100,8 @@ nav a:hover {
 section, article {
     background-color: #FFF;
     border: var(--border);
-    box-shadow: 0 1em 1em #999;
     column-gap: 2em;
+    column-rule: 0.1em dotted #999;
     column-width: 30em;
     margin: 3em 0.2em 1em 0.2em;
     padding: 1.5em;
@@ -111,9 +111,6 @@ section p::first-letter, article p::first-letter {
     font-size: 1.4em;
     font-style: normal;
     font-weight: bold;
-}
-section > h1, article > h1 {
-    column-span: all;
 }
 i {
     font-style: italic;
@@ -140,14 +137,17 @@ img {
 figcaption {
     font-size: 0.75em;
 }
+img, section, article {
+    box-shadow: 0 1em 1em #999;
+}
 
 /* Media Queries */
 @media screen and (min-width: 45em) {
     body {
         border: 3em solid #000;
         border-bottom: none;
-        border-image-slice: 33.33%;
         border-image-repeat: repeat;
+        border-image-slice: 33.33%;
         border-image-source: url(media/border-tile.png);
         border-top: none;
         margin: 0 auto;
