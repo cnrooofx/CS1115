@@ -86,13 +86,9 @@ nav a {
     text-decoration: none;
     transition: background-color 0.7s ease;
 }
-nav a:hover {
+nav a:hover, a[href=""] {
     background-color: var(--white);
     border: 0.1em solid var(--black);
-    color: var(--main-color);
-}
-.current-page {
-    background-color: var(--white);
     color: var(--main-color);
 }
 
